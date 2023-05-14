@@ -3,7 +3,15 @@ class PrototypesController < ApplicationController
     @user = current_user
   end
 
-  def user_paras
+  def new
+  end
+
+  def create
+  end
+
+
+private
+  def user_params
     params.require(:user).permit(:name)
   end
 end
